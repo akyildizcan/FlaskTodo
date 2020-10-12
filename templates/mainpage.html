@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Todo Server Managment App</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/main.css')}}">
+
+    
+
+<!--<img src="https://img.pngio.com/gta-wikito-do-list-rename-gta-wiki-fandom-powered-by-wikia-to-do-png-300_300.png" alt="GTA Wiki:To-Do List/Rename | GTA Wiki | FANDOM powered by Wikia">
+http://acmsocc.github.io/2016/assets/img/googlelogo_color_324x112dp.png  id="logo_custom" width="10%"  alt="logo
+<a class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+-->
+
+
+</head>
+
+
+<body>
+
+<div class="bg">
+
+  <body>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a href="https://www.google.com/" class="navbar-brand">
+          <!-- Logo Image -->
+          <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+          <!-- Logo Text -->
+          <span class="text-uppercase font-weight-bold">TODO</span>
+        </a>
+
+      <!--<img href="https://www.google.com/" class="navbar-brand" src="https://img.pngio.com/from-college-to-knowledge-time-management-and-organization-to-do-png-367_324.png" alt="From College to Knowledge: Time Management and Organization">
+          <a href="https://www.google.com/" target="_blank" style="color:red;">GOOGLE</a>-->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#offer"><b>Our Offer</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><b>How it works</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Benifits</b></a>
+                  </li>  
+                </ul>
+            </div>  
+       </nav>                                     
+  </body>
+  <body>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="container p-3 my-3 bg-dark text-white"> <h2>Your are Welcome to the TODO App Page...</h2>
+            <div class="container p-3 my-3 bg-secondary text-white">
+              <h6> <strong><em>This page created with <code>Flask Framework</code> in the <code>Python</code> by <abbr title="CAN AKYILDIZ">AKYILDIZ</abbr> for show make a simple todo app a basic use the <code>Flask Framework</code> and <code>Python.</code></em></strong> </h6></p>
+              
+            </div>
+            <hr><div class="container p-3 my-3 bg-primary text-white">
+            <h4>This the application in the page, you can create that to do list and if completed the on the substances in the list you can make marking. </h4>
+            <p> <em><h5>Let's start; <br>
+                    <ul>
+                      <li>Firstly we enter to do substances in the todo list bar and after that we to push the <kbd>Add</kbd> button.</li>
+                      <li>Than we created our list, if the completed of sunstances in the list we can change True with to push the <kbd>Update</kbd> button.</li>
+                      <li>Finally if of the completed our missions we can remove in the our list with to push the <kbd>Delete</kbd> button. </li>
+                    </ul>  
+                  </h5>
+                </em>
+            </p> 
+          </div>
+        </div>    
+        <section class="home"></section>
+            <div style="margin-top: 10px;" class="container">
+                <hr>
+                <h3>Todo App </h3>
+                <hr>
+                <form action="/add" method ="POST">
+                <hr>
+                <label for="ExampleInput">Todo List</label>  
+                <div class="input-group mb-3"> 
+                    <input type="text" class="form-control" name="inp" placeholder="Add in the todo">
+                    <hr>
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-outline-secondary">Add</button>
+                      <hr>
+                    </div>
+                </form>
+            </div>
+        {% if not todo %}
+            <div class="alert-warning">
+                Data not found in database.
+                <br>
+            </div>
+            <br>
+            <div class="alert-info">
+                Please your <a href="inp" class="alert-link">enter</a>data...
+            </div>
+        {% else %}
+        <br><table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Todo Title</th>
+                <th scope="col">Todo Complete</th>
+                <th scope="col">Todo Update</th>
+                <th scope="col">Todo Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for tod in todo %}
+        
+               {% if tod.complete == False %}
+                  <tr>
+                    <th scope="row">{{tod.ID}}</th>
+                    <td>{{tod.TITLE}}</td>
+                    <td>{{tod.complete}} -- <div class="spinner-border text-danger"></div> </td>
+                    <td> <a href="/update/{{tod.ID}}" class="btn btn-warning" ><small><i><b>Update</b></i></small> </a></td>
+                    <td> <a href="/delete/{{tod.ID}}" class="btn btn-danger" ><i><small>Delete</small></i></a></td>
+                </tr>
+               {% else %}
+                  <tr>
+                    <th scope="row">{{tod.ID}}</th>
+                    <td>{{tod.TITLE}}</td>
+                    <td>{{tod.complete}} --- <i class='far fa-calendar-check' style='font-size:24px;color:green'> </i> </td>
+                    <td> <a href="/update/{{tod.ID}}" class="btn btn-warning" ><small><i><b>Update</b></i></small> </a></td>
+                    <td> <a href="/delete/{{tod.ID}}" class="btn btn-danger" ><i><small>Delete</small></i></a></td>
+                </tr>
+               {% endif %}
+              {% endfor %}              
+            </tbody>
+        </table> 
+        {% endif %}
+      
+        </body>
+        <!-- Create a card -->
+        <div class="card" style="width: 22rem; margin:0 auto;"> 
+          <img class="card-img-top"
+              src= 
+        "https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                      alt="Card image cap"> 
+            
+          <div class="card-body"> 
+              <h5 class="card-title" style="color:green"> 
+                  Can AKYILDIZ 
+              </h5> 
+                
+              <p class="card-text" style="color:green;"> 
+                
+              </p> 
+                
+              <p class="card-text" style="color:green;"> 
+                  Welcome to my profile 
+              </p> 
+          </div> 
+            
+          <div class="card-footer text-center"> 
+                
+              <p style="color:green;"></p> 
+                
+              <button class="btn btn-primary btn-sm float-left"
+                          id="left" style="color:white"> 
+                  Blog Site 
+              </button> 
+                
+              <button class="btn btn-warning btn-sm"
+                      id="center" style="color:white" > 
+                  <a href="http://127.0.0.1:5000/" style="color:wheat" >Todo App</a>  
+              </button> 
+               <a href="https://www.linkedin.com//in/can-akyildiz-802883185/" class="btn btn-danger btn-sm float-right" id="right" style="color:aliceblue">Linkedin </a> 
+             <!-- <button class="btn btn-danger btn-sm float-right"
+                      id="right" style="color:white">-->
+                  
+              </button> 
+          </div> 
+        </div>     
+                        <!-- Social Footer, Single Coloured -->
+                        <!-- Include Font Awesome Stylesheet in Header -->
+                        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+                        <!-- // -->
+                        <div style="width: 22rem; margin:0 auto;" class="container h-100">
+                                <div style="width: 22rem; margin:0 auto;" class="text-center center-block">
+                                    <p class="txt-railway">- Social Media and AllinFunApps -</p>
+                               
+                                    <p> <strong>Also you can follows and supports to us that we AllinFun made in the social media links.</strong></p>
+                                    <p><ins>Last you can access to me with the E-mail and Linkedin to follow.</ins></p>
+
+                                        <a href="https://play.google.com/store/apps/details?id=com.ekenapp.allinfun.free"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                                        <a href="https://www.instagram.com/allinfunapp/?igshid=115usiml02llh"><i class="fa fa-instagram fa-3x social"></i></a>
+                                        <a href="https://twitter.com/AllinFunApp?s=08"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                                        <a href="mailto:canakyildiz1@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+                                        <a href="https://www.linkedin.com//in/can-akyildiz-802883185/"><i class="fa fa-linkedin-square fa-3x social"></i></a>
+                                </div>
+                                        <hr />
+                        </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+  
+
+</body>
+
+
+
+</html>
+
